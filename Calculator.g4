@@ -19,6 +19,7 @@ RPAR  : ')';
 input
     : setVar NL input     # ToSetVar
     | plusOrMinus NL? EOF # Calculate
+    | ID NL? EOF        # ATOM
     ;
 
 setVar
